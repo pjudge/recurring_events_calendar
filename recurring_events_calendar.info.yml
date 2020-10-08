@@ -1,0 +1,7 @@
+name: 'Recurring Events Calendar'
+type: module
+description: 'A calendar view for Recurring Events.'
+core_version_requirement: ^8.8 || ^9
+package: 'Recurring Events'
+dependencies:
+  - recurring_events:recurring_events
