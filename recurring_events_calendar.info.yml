@@ -5,3 +5,4 @@ core_version_requirement: ^8.8 || ^9
 package: 'Recurring Events'
 dependencies:
   - recurring_events:recurring_events
+  - web_services:rest
