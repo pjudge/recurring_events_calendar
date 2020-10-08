@@ -1,5 +1,3 @@
 recurring_events_calendar:
   js:
-    js/videoformatter.js: {}
-  dependencies:
-    - core/jquery
+    js/events_calendar.js: {}
