@@ -1,4 +1,4 @@
 recurring_events_calendar:
   version: 1.x
   js:
-    js/dist/index.js: {}
+    js/dist/main.min.js: {}
