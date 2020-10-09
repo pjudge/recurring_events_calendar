@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App';
 
 // # Example 1: Simple "Hello, World" code
 ReactDOM.render(
-  <h1>Hello there - world!</h1>,
-  document.getElementById('react-app')
+  <App />,
+  document.getElementById('calendar-root')
 );

@@ -21,7 +21,7 @@ class EventsCalendarBlock extends BlockBase {
    */
   public function build() {
     return [
-      '#markup' => $this->t('<div id="react-app"></div>'),
+      '#markup' => $this->t('<div id="calendar-root"></div>'),
       '#attached' => [
         'library' => 'recurring_events_calendar/recurring_events_calendar'
       ],
