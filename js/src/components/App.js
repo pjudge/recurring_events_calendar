@@ -1,9 +1,12 @@
 import React from 'react';
+import CalendarNavigation from './CalendarNavigation';
+import CalendarGrid from './CalendarGrid';
 
 function App() {
   return (
     <div className="calendar">
-      Calendar goes here
+      <CalendarNavigation />
+      <CalendarGrid />
     </div>
   );
 }
