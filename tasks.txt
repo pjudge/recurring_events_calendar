@@ -1,0 +1,30 @@
+1. Get current year
+2. Calculate if leap year. If yes, set February days to 29, else 28.
+  To determine whether a year is a leap year, follow these steps:
+    If the year is evenly divisible by 4, go to step 2. Otherwise, go to step 5.
+    If the year is evenly divisible by 100, go to step 3. Otherwise, go to step 4.
+    If the year is evenly divisible by 400, go to step 4. Otherwise, go to step 5.
+    The year is a leap year (it has 366 days).
+    The year is not a leap year (it has 365 days).
+3. Array of months = [January, February, March, April, May, June, July, August, September, October, November, December]
+4. Array of days of the month = [ 31, FebDays, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ]
+5. Array of days of the week = [ Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday ]
+6. Calculate what day of the week the month starts on based on today's date (get current date, get current day)
+
+
+today's date -1, modulo 7.
+take that number and subtract today's date number from it.
+if it's greater than 0, subtract 7.
+get absolute value. that's the day the month starts on.
+
+- if today is Sunday the 18th of October...
+
+  use modulo to find remainder after todays' date is divided by 7
+
+  18-1 = 17. 17 % 7 = 3.
+  subtract today's day number. 3-0 = 3.
+  if it's greater than 0, subtract 7.
+  3-7 = -4
+  get absolute number and it's thursday.
+
+  sun-0 mon-1 tue-2 wed-3 thu-4 fri-5 sat-6
