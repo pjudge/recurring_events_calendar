@@ -1,3 +1,11 @@
+npm run-script build
+
+In app.js, get current date including day of the week, and year.
+Pass that via props to calendarGrid
+
+
+
+
 1. Get current year
 2. Calculate if leap year. If yes, set February days to 29, else 28.
   To determine whether a year is a leap year, follow these steps:
