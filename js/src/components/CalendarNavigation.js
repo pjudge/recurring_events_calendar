@@ -1,22 +1,13 @@
 import React from 'react';
 
-function CalendarNavigation() {
+function CalendarNavigation(props) {
   return (
     <div className="calendar-navigation">
       <div className="calendar-nav--month-select">
         <select id="month" aria-label="month">
-          <option>January</option>
-          <option>February</option>
-          <option>March</option>
-          <option>April</option>
-          <option>May</option>
-          <option>June</option>
-          <option>July</option>
-          <option>August</option>
-          <option>September</option>
-          <option>October</option>
-          <option>November</option>
-          <option>December</option>
+          {props.months.map(month => (
+            <option key={month}>{month}</option>
+          ))}
         </select>
       </div>
       <div className="calendar-nav--day-select">
