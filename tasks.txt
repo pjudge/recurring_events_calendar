@@ -9,11 +9,11 @@ Pass that via props to calendarGrid
 1. Get current year
 2. Calculate if leap year. If yes, set February days to 29, else 28.
   To determine whether a year is a leap year, follow these steps:
-    If the year is evenly divisible by 4, go to step 2. Otherwise, go to step 5.
-    If the year is evenly divisible by 100, go to step 3. Otherwise, go to step 4.
-    If the year is evenly divisible by 400, go to step 4. Otherwise, go to step 5.
-    The year is a leap year (it has 366 days).
-    The year is not a leap year (it has 365 days).
+    1. If the year is evenly divisible by 4, go to step 2. Otherwise, go to step 5.
+    2. If the year is evenly divisible by 100, go to step 3. Otherwise, go to step 4.
+    3. If the year is evenly divisible by 400, go to step 4. Otherwise, go to step 5.
+    4.The year is a leap year (it has 366 days).
+    5. The year is not a leap year (it has 365 days).
 3. Array of months = [January, February, March, April, May, June, July, August, September, October, November, December]
 4. Array of days of the month = [ 31, FebDays, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ]
 5. Array of days of the week = [ Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday ]
