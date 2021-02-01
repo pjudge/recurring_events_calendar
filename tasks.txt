@@ -1,4 +1,4 @@
-npm run-script build
+npm run-script build inside submodule root
 
 In app.js, get current date including day of the week, and year.
 Pass that via props to calendarGrid

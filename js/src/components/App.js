@@ -3,11 +3,11 @@ import CalendarNavigation from './CalendarNavigation';
 import CalendarGrid from './CalendarGrid';
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  const increment = () => {
-    setCount(count + 1);
-  }
+  // const increment = () => {
+  //   setCount(count + 1);
+  // }
 
   // Get today's date.
   const today = new Date();
@@ -22,7 +22,7 @@ function App() {
 
   const week_days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  var febDays;
+  const [febDays, setFebDays] = useState("");
   const month_days = [31, febDays, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 
@@ -48,14 +48,18 @@ function App() {
   }, []);
 
   return (
+
     <div className="calendar">
+      {febDays}
+
+
       {/* <CalendarNavigation year={year} month={month} date={date} day={day} week_days={week_days} months={months} />
       <CalendarGrid year={year} month={month} date={date} day={day} week_days={week_days} months={months} /> */}
 
-      <div>
+      {/* <div>
         <p>Count: {count}</p>
         <button onClick={increment}>+</button>
-      </div>
+      </div> */}
 
 
     </div>
